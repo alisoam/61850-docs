@@ -21,8 +21,8 @@ You can achive same two port ethernet setup with a [Teensy 4.1](https://www.pjrc
 ## Application Program
 Application program uses [libiec61850](https://github.com/mz-automation/libiec61850).
 It has two important parts:
-- An implementation of an LwIP netif driver which support prp protocol.
-- An implementation of libiec61850 hardware abstraction layer (HAL) to run on FreeRTOS() and LwIP.
+- An implementation of an LwIP netif driver which support prp protocol ([here](https://github.com/alisoam/61850-app/blob/main/source/net/interface.c)).
+- An implementation of libiec61850 hardware abstraction layer (HAL) to run on FreeRTOS() and LwIP ([here](https://github.com/alisoam/61850-app/tree/main/source/libiec61850/hal)).
 
 With these two parts, it was possible to run the libiec61850 examples on FreeRTOS and LwIP with PRP(or other redundancy protocols) support.
 
